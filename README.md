@@ -11,6 +11,28 @@ This project contains the most common used features used in a golang project, wh
 
 ## Project Layout
 
+### `/cmd`
+
+Main applications for this project.
+
+The directory name for each application should match the name of the executable you want to have (e.g., /cmd/myapp).
+
+Don't put a lot of code in the application directory. If you think the code can be imported and used in other projects, then it should live in the /pkg directory. If the code is not reusable or if you don't want others to reuse it, put that code in the /internal directory. You'll be surprised what others will do, so be explicit about your intentions!
+
+It's common to have a small main function that imports and invokes the code from the /internal and /pkg directories and nothing else.
+
+( From <https://github.com/golang-standards/project-layout#cmd> )
+
+### `/internal`
+
+Private application and library code. This is the code you don't want others importing in their applications or libraries.Put your actual application code in the /in
+
+ternal/app directory (e.g., /internal/app/myapp) and the code shared by those apps in the /internal/pkg directory (e.g., /internal/pkg/myprivlib).
+
+( From <https://github.com/golang-standards/project-layout#internal> )
+
+### References
+
 Project layout is mainly referring the two following projects (articles):
 
 1. [Standard Go Project Layout](https://github.com/golang-standards/project-layout)
