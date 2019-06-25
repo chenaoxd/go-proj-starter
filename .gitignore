@@ -1,0 +1,9 @@
+### common ###
+*~
+.#*
+*#
+*.old
+.idea
+.DS_Store
+
+cmd/dev

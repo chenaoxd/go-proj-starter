@@ -1,0 +1,3 @@
+#!/bin/bash
+make lint
+test -z "$(make lint)"
