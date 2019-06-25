@@ -58,6 +58,8 @@ Run the specific module which is located in the cmd package.
 
 Start an web dev server which will automatically restart when the `.go` files is modified. And this function is supported by [modd](https://github.com/cortesi/modd). You can change the server startup command by modifying the [modd.conf](./modd.conf) file.
 
+**NOTE**: You need to run `make deps_web` first before using this.
+
 ### `make debug mod=module`
 
 Start a delve debug server at localhost:33333, and then you can use some debug client to connect to the debug server such as [sebdah/vim-delve](https://github.com/sebdah/vim-delve) if you are using vim.
