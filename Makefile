@@ -30,6 +30,11 @@ run:
 	$(GOBUILD) -o $(BIN_DIR)/$(mod) -v ./cmd/$(mod)
 	$(BIN_DIR)/$(mod) $(args)
 
+## dev: run dev server
+dev:
+	$(GOBUILD) -o $(BIN_DIR)/server -v ./cmd/server
+	$(BIN_DIR)/server
+
 ## webdev: run webdev server which will restart the server when filechanges
 ## NOTE: need modd.conf support
 webdev:
