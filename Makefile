@@ -1,5 +1,5 @@
 PROJECTNAME="go-proj-starter"
-GOPROXY=GOPROXY=https://goproxy.cn
+GOPROXY=GOPROXY=https://goproxy.io
 GOCMD=go
 GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
